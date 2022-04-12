@@ -1,0 +1,2 @@
+I am template;
+try to figure out hot to generate files by template;

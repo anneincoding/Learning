@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 const meow = require('meow');
-const praticeModule = require('./');
+const praticeModule = require('.');
 
 const cli = meow(`
 Usage
