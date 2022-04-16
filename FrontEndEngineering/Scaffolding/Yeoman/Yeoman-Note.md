@@ -71,6 +71,7 @@ yo node:cli
 const Generator = require('yeoman-generator');
 module.exports = class extends Generator {
   prompting(){ 
+    // (property) type?: "number" | "input" | "password" | "list" | "expand" | "checkbox" | "confirm" | "editor" | "rawlist"
     // use the apis to interactive with users
   }
   writing() {
