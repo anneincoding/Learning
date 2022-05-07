@@ -4,6 +4,9 @@
     "iosfwd": "cpp",
     "ostream": "cpp",
     "vector": "cpp",
-    "iterator": "cpp"
+    "iterator": "cpp",
+    "memory": "cpp",
+    "__hash_table": "cpp",
+    "unordered_map": "cpp"
   }
 }
