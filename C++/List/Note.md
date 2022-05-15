@@ -11,18 +11,15 @@
 3. 202
   - cycle linkedlist
 ## Reverse
-1. 
-  - 
-  - 
-2. 
-  - 
-3. 
-  - 
+1. 206
+  - iteration
+  - recursion
+2. 92
+  - dummy head / virtual head
+3. 25
+4. 61
+5. 24 
 ## Delete
-1. 
-  - 
-  - 
-2. 
-  - 
-3. 
-  - 
+1. 19
+2. 83
+3. 82
