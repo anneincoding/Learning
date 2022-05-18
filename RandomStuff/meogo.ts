@@ -11,7 +11,7 @@
   // 方法一
   // return Object.create(obj as any);
   // 方法二
-  let clone: any =  {};
+  let clone: any =  new Object;
   clone.__proto__ = obj.constructor.prototype;
   clone.constructor = clone.__proto__;
   for(let key in obj) {
@@ -315,13 +315,13 @@ async function main() {
   // } catch (e) {
   //   console.log(e.stack || e);
   // }
-  // try {
-  //   console.log('Testing Q3...');
-  //   await testAsyncWorker();
-  //   console.log('PASSED!');
-  // } catch (e) {
-  //   console.log(e.stack || e);
-  // }
+  try {
+    console.log('Testing Q3...');
+    await testAsyncWorker();
+    console.log('PASSED!');
+  } catch (e) {
+    console.log(e.stack || e);
+  }
 }
 
 main();
