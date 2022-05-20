@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Please center the inner div vertically without changing their dimensions and colors.
+  1.Should be centered vertically
+  2.even if container size changes -->
+  <style>
+    body {
+      height: 100vh;
+    }
+/* Base Code */
+    /* .outer {
+      width: 100%;
+      height: 100%;
+      background-color: #efefef;
+    }
+
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: #f44336;
+    } */
+
+/* 1. flex */
+    /* .outer {
+      width: 100%;
+      height: 100%;
+      background-color: #efefef;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: #f44336;
+    } */
+/* 2. position: relative, top */
+    /* .outer {
+      width: 100%;
+      height: 100%;
+      background-color: #efefef;
+    }
+
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: #f44336;
+      position: relative;
+      top:calc(50% - 50px);
+      margin: 0 auto;
+    } */
+/* 3. position: relative, transform */
+    /* .outer {
+      width: 100%;
+      height: 100%;
+      background-color: #efefef;
+    }
+
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: #f44336;
+      position: relative;
+      top:50%;
+      transform:translateY(-50%);
+      margin: 0 auto;
+    } */
+/* 4. position: relative, transform */  
+    /* .outer {
+      width: 100%;
+      height: 100%;
+      background-color: #efefef;
+      position: relative;
+    }
+
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: #f44336;
+      position: absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      margin:auto;
+    }  */
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="inner">
+  </div>
+</body>
+</html>

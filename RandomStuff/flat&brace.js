@@ -1,4 +1,5 @@
 // (2) 括号匹配, () {} <> []
+// 可以先
 const vaildBrackets = string => {
     if (string.length === 0) return false;
     const braceMap = {
@@ -27,6 +28,39 @@ const vaildBrackets = string => {
 console.log(vaildBrackets('AB(<123{abc}d[e]f>456)CD'));
 // 输出 true
 
+const files = {
+    "a": {
+        "b": {
+            "c": {
+                "d": {
+                    "e": true,
+                    "f": true
+                },
+                "g": true
+            }
+        },
+        "8": {
+            "xx": true
+        }
+    }
+}
+let res = [];
+let temp = []; 
+const getFileList = (files) => {
+    const keys = Object.keys(files);
+    keys.forEach(key => {   
+        if (files[key] == true) { // 文件
+            let path = temp.join('/') + '/' + key;
+            res.push(path);
+        } else { // 文件夹
+            temp.push(key);
+            getFileList(files[key]);
+            temp.pop(); // 还原现场
+        }
+    });
+}
+console.log(res);
+getFileList(files) // => ['a/b/c/d/e', 'a/b/c/d/f', 'a/b/c/g']
 // const flatten = (array) => {
 //   // recursion
 //   const res = [];
